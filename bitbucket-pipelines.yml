@@ -1,0 +1,46 @@
+
+
+definitions:
+  steps:
+    - step: &shellcheck
+        name: check scripts
+        image: koalaman/shellcheck-alpine:stable
+        script: 
+          - |
+            find . -type f -name '*.sh' | wc -l
+            find . -type f -name '*.sh' | xargs shellcheck --external-sources
+    - step: &tfm_init
+        name: init - lint - validate
+        image: hashicorp/terraform:latest
+        script: 
+          - |
+            chmod +x ./scripts/*.sh
+            source ./scripts/tfm_init.sh
+    - step: &bump
+        name: bump module version
+        image:
+          name: 086282490297.dkr.ecr.eu-west-1.amazonaws.com/xops-cicd-python-alpine:latest
+          aws:
+            access-key: $ECR_AWS_ACCESS_KEY_XOPS_PULL
+            secret-key: $ECR_AWS_SECRET_KEY_XOPS_PULL
+        script:
+          - set -o pipefail
+          - | 
+            # Create / update terraform docs
+            chmod +x ./scripts/tfm_docs.sh
+            source ./scripts/tfm_docs.sh
+          - |
+            # Update version
+            chmod +x .bitbucket/bump.sh
+            source .bitbucket/bump.sh
+pipelines:
+  branches:
+    feature/*:
+      - step: 
+          <<: *shellcheck
+      - step:
+          <<: *tfm_init
+    master:
+      - step:
+          <<: *bump
+          

@@ -22,6 +22,8 @@ Describe how to use your module here.
 
 Minimum required input is:
 
+```
+
 ################################################################################
 # Provider / Locals 
 ################################################################################
@@ -59,6 +61,7 @@ module "vpc" {
   tags = local.tags
 
 }
+```
 
 ## Prerequites
 

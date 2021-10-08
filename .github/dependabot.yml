@@ -1,0 +1,17 @@
+version: 2
+# reference: https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "@ohpensource/platform"
+      - "@ohpen/admins"
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    assignees:
+      - "@ohpensource/platform"
+      - "@ohpen/admins"

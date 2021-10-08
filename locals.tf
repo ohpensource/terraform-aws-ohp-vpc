@@ -1,0 +1,4 @@
+
+locals {
+  dummy = var.dummy
+}

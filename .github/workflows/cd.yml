@@ -1,0 +1,17 @@
+name: continuous-delivery
+on:
+  push:
+    branches: [main]
+jobs:
+  semver-changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: semver & changelog
+        run: |
+          date > generated.txt
+          git config user.name github-svc
+          git config user.email github-svc@ohpen.com
+          node ./scripts/generate-version-and-release-notes.js

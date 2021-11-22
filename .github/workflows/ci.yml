@@ -14,7 +14,8 @@ jobs:
         uses: hashicorp/setup-terraform@v1
       - uses: actions/setup-python@v2
       - uses: pre-commit/action@v2.0.3
-        run: pre-commit install
+        run: |
+          pre-commit install
       - name: tfm-validate
         run: |
           chmod +x -R ./scripts

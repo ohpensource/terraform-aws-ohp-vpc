@@ -12,6 +12,9 @@ jobs:
           fetch-depth: 0
       - name: Terraform Install
         uses: hashicorp/setup-terraform@v1
+      - uses: pre-commit/action@v2.0.3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: tfm-validate
         run: |
           chmod +x -R ./scripts

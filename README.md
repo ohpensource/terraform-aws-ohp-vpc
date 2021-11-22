@@ -1,3 +1,10 @@
+# MIGRATED TO GITHUB
+This module can be pulled directly from github. Update source to
+
+"github.com/ohpensource/terraform-aws-ohp-vpc?ref=v0.0.1"
+
+Check GitHub for latest version number
+
 # Terraform Module VPC - not ready for production use
 
 ## Maintainer

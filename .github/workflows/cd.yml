@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.CICD_GITHUB_REPOSITORY_TOKEN }}
-      - uses: ohpensource/platform-cicd/actions/git/generate-version-and-release-notes@2.12.0.1
+      - uses: ohpensource/platform-cicd/actions/git/generate-version-and-release-notes@2.14.0.3
         name: semver & changelog
         with:
           user-email: "github-svc@ohpen.com"

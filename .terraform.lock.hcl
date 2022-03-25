@@ -2,20 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.66.0"
+  version     = "4.7.0"
   constraints = ">= 3.0.0"
   hashes = [
-    "h1:V2HWB95PQn9c6P1GsPaUKZHRSBiAyh45tngFVsg4SxQ=",
-    "zh:21331ca956428f207c276c3e57ac8aa854b950b740e20318da727928460da42c",
-    "zh:2ae02a92abac8c99095c98272176543fefc9a3e584a5ca279c9d346cae1825f1",
-    "zh:578e06c8559a124b9d9c904d526ba4d1abe1fe4c66c5c130b7d4a595ff6338ff",
-    "zh:699f58910307d42d6320d8ccf10d909a262fe7b5fc2dd7bf9e15eaa5a1374d4d",
-    "zh:8f61bf009a6f5ebfa8e1588df8d4f75ae275c6ef636eea1ef377aa4e6a388be5",
-    "zh:931b0beafcbd7e11fa59e554fd41b54e548cb994908e89f31ea9d612fce26eb9",
-    "zh:b3d5abde76e4bda153a63a11c1fa5aec19f6f977cbf1e26adcd2916ec93c1b6f",
-    "zh:b5a4f97335387b21fa38eed7c22b3c92f6b1157ed301a0880548277136962e48",
-    "zh:bfaf6c7fa7cc13cb833015d4eef700df652f40c6e658e76cf23aebfa4c8b7afe",
-    "zh:d56f612da07dee639e8eb75ce6a6f1b1255ec964e6fe9333c6a8fddd7ccf931f",
-    "zh:f695dfb0dbea6f48f6e6eb0ff5766f98d1f1708b77889df39c67113fbcd8a3cd",
+    "h1:H2d956E++qhRN/ZOHMoOxXSHEJNCr4CpdSSPY3e9mX8=",
+    "zh:00f77e618cdceb507b7033758a94459ca1d2904ec0f99d9dfdbfdd98f3f219d8",
+    "zh:49989eb97859e5ef7f2123422fceaa3a1d5d63a4b7800591737e835dd218701e",
+    "zh:5107f889858f99efcfb37a53dd5f5e1b064ae6debcd13d493ae4bb3c02370d1b",
+    "zh:7d4c85de26cbb8662cba441c923f9928756800380f36a68cf49f60f5b3212165",
+    "zh:87f1b4a26ed3e0741670dfc8708b45bf17ad77d3e72b43bfc123ffae170b3578",
+    "zh:9470ef10e55fdacec8aaf5457eb299c6624e05cc9890e162244c446bb704b93a",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:acbf6fbdbdf284829cdfd5652e8fc17c9ad9f458978a16ea63b2bed2b4d98e41",
+    "zh:b491c45ae264512d744992a0ab88660e878b4462a38835dab54e61a61ade9378",
+    "zh:ee2a5908c074cb5ebe53d5abed99096695e3346833a80d9833c26882ddabf913",
+    "zh:f2b311a760b5a5a2a9c889632c15dd5617350ae95ac7e2253aab3931fbc41c37",
+    "zh:fdf1b5a37be1a3aa6953f4b56d7294c1e86da12bb661c24f4e0840321c10973f",
   ]
 }

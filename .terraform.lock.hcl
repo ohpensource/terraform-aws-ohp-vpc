@@ -2,20 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.66.0"
+  version     = "4.9.0"
   constraints = ">= 3.0.0"
   hashes = [
-    "h1:V2HWB95PQn9c6P1GsPaUKZHRSBiAyh45tngFVsg4SxQ=",
-    "zh:21331ca956428f207c276c3e57ac8aa854b950b740e20318da727928460da42c",
-    "zh:2ae02a92abac8c99095c98272176543fefc9a3e584a5ca279c9d346cae1825f1",
-    "zh:578e06c8559a124b9d9c904d526ba4d1abe1fe4c66c5c130b7d4a595ff6338ff",
-    "zh:699f58910307d42d6320d8ccf10d909a262fe7b5fc2dd7bf9e15eaa5a1374d4d",
-    "zh:8f61bf009a6f5ebfa8e1588df8d4f75ae275c6ef636eea1ef377aa4e6a388be5",
-    "zh:931b0beafcbd7e11fa59e554fd41b54e548cb994908e89f31ea9d612fce26eb9",
-    "zh:b3d5abde76e4bda153a63a11c1fa5aec19f6f977cbf1e26adcd2916ec93c1b6f",
-    "zh:b5a4f97335387b21fa38eed7c22b3c92f6b1157ed301a0880548277136962e48",
-    "zh:bfaf6c7fa7cc13cb833015d4eef700df652f40c6e658e76cf23aebfa4c8b7afe",
-    "zh:d56f612da07dee639e8eb75ce6a6f1b1255ec964e6fe9333c6a8fddd7ccf931f",
-    "zh:f695dfb0dbea6f48f6e6eb0ff5766f98d1f1708b77889df39c67113fbcd8a3cd",
+    "h1:GtmIOZMkKmr9tMLWouHWiGXmKEL/diOTNar5XfOVLjs=",
+    "zh:084b83aef3335ad4f5e4b8323c6fe43c1ff55e17a7647c6a5cad6af519f72b42",
+    "zh:132e47ce69f14de4523b84b213cedf7173398acda14245b1ffe7747aac50f050",
+    "zh:2068baef7dfce3613f3b4f27314175e971f8db68d9cde9ec30b5659f80c68c6c",
+    "zh:63c6f489683d5f1ac55e82a0df387143ed22701d5f22c109a4d5c9924dd4e437",
+    "zh:8115fd21965954fa4568c09331e05bb29da967fab8d077419aed09954378e216",
+    "zh:8efdc95fde108f777ed9c79ae25dc17aea9771903250f5c5c8a4c726b90a345f",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:9d42a7bc34d84b70c1d1bcc215cabd63abbcbd0352b70bd84da6c3916634932f",
+    "zh:aacbcceb241aa475888c0869e87593182edeced3170c76a0c960dd9c905df449",
+    "zh:c7fe7904511052e4102870256819a1917177572cf684f0611ebf767f9c1fbaa8",
+    "zh:c8e07c3424663d1d0e7e32f4ade8099c19f6326d37c6da98104d90c986ff66fc",
+    "zh:e47cafbd38b56ef14fd8d727b4ffea847c166b1c684f585ee5fb78983b537248",
   ]
 }

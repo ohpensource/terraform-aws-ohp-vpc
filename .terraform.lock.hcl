@@ -2,20 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.66.0"
+  version     = "4.17.0"
   constraints = ">= 3.0.0"
   hashes = [
-    "h1:V2HWB95PQn9c6P1GsPaUKZHRSBiAyh45tngFVsg4SxQ=",
-    "zh:21331ca956428f207c276c3e57ac8aa854b950b740e20318da727928460da42c",
-    "zh:2ae02a92abac8c99095c98272176543fefc9a3e584a5ca279c9d346cae1825f1",
-    "zh:578e06c8559a124b9d9c904d526ba4d1abe1fe4c66c5c130b7d4a595ff6338ff",
-    "zh:699f58910307d42d6320d8ccf10d909a262fe7b5fc2dd7bf9e15eaa5a1374d4d",
-    "zh:8f61bf009a6f5ebfa8e1588df8d4f75ae275c6ef636eea1ef377aa4e6a388be5",
-    "zh:931b0beafcbd7e11fa59e554fd41b54e548cb994908e89f31ea9d612fce26eb9",
-    "zh:b3d5abde76e4bda153a63a11c1fa5aec19f6f977cbf1e26adcd2916ec93c1b6f",
-    "zh:b5a4f97335387b21fa38eed7c22b3c92f6b1157ed301a0880548277136962e48",
-    "zh:bfaf6c7fa7cc13cb833015d4eef700df652f40c6e658e76cf23aebfa4c8b7afe",
-    "zh:d56f612da07dee639e8eb75ce6a6f1b1255ec964e6fe9333c6a8fddd7ccf931f",
-    "zh:f695dfb0dbea6f48f6e6eb0ff5766f98d1f1708b77889df39c67113fbcd8a3cd",
+    "h1:FtkENM8QDK6CLhBr4k97kx26G2CqHZk9q5sNhHcnYRc=",
+    "zh:2cc932fb0af13850de3c60a5318b695c82973489c140ca4f13218f69136c36e5",
+    "zh:4018884d66acfa8273f7100ef0334004ed8a3790ffc7621eaef65d1d9c3fab43",
+    "zh:6a7769e5c81e543f5deaaa8596e45f92244a61f5026c8c66d5bf55f2a7fd4801",
+    "zh:7956c1e17ec7647af3612cc98cbcd21d50b2d9f5e41c676b62ee214f5610c29f",
+    "zh:833d9d608dbffda7da565004ef592a8a364e96b5c13cacf873f5d32714e197ff",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:a55b8b72e47999d9c7aecaa009797ed7eb3f669a719d3f6127ee5e0f1b91ecc2",
+    "zh:a6f2377d71dfba9669f060e687498e589b490366026821bd83451ac9ef0cd9e8",
+    "zh:b006aa281097b3db27a62ea3c8cfaf4c4d979d57f4a6c180bd2da3d0ab4bd61a",
+    "zh:d6a6d29256fee6c3b35384719c84c19b13dcccc53bffce5f529023607d130d0b",
+    "zh:edc155e147883872e1227aa6a4ef3205fa9de421475d96c20a34a5eaff3df01f",
+    "zh:f25773dcc00dead0412e222cf3891ac6228dcb4d69da9bacfca305a0a2a1db56",
   ]
 }

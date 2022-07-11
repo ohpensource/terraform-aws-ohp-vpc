@@ -13,6 +13,7 @@ resource "aws_default_network_acl" "this" {
     compact(flatten([
       aws_subnet.public.*.id,
       aws_subnet.private.*.id,
+      aws_subnet.serverless.*.id,
       aws_subnet.intra.*.id,
       aws_subnet.database.*.id,
       aws_subnet.redshift.*.id,
@@ -22,6 +23,7 @@ resource "aws_default_network_acl" "this" {
     compact(flatten([
       aws_network_acl.public.*.subnet_ids,
       aws_network_acl.private.*.subnet_ids,
+      aws_network_acl.serverless.*.subnet_ids,
       aws_network_acl.intra.*.subnet_ids,
       aws_network_acl.database.*.subnet_ids,
       aws_network_acl.redshift.*.subnet_ids,
@@ -172,6 +174,59 @@ resource "aws_network_acl_rule" "private_outbound" {
   protocol        = var.private_outbound_acl_rules[count.index]["protocol"]
   cidr_block      = lookup(var.private_outbound_acl_rules[count.index], "cidr_block", null)
   ipv6_cidr_block = lookup(var.private_outbound_acl_rules[count.index], "ipv6_cidr_block", null)
+}
+
+################################################################################
+# serverless Network ACLs
+################################################################################
+
+resource "aws_network_acl" "serverless" {
+  count = var.create_vpc && var.serverless_dedicated_network_acl && length(var.serverless_subnets) > 0 ? 1 : 0
+
+  vpc_id     = element(concat(aws_vpc.this.*.id, [""]), 0)
+  subnet_ids = aws_subnet.serverless.*.id
+
+  tags = merge(
+    {
+      "Name" = format("%s-${var.serverless_subnet_suffix}", var.name)
+    },
+    var.tags,
+    var.serverless_acl_tags,
+  )
+}
+
+resource "aws_network_acl_rule" "serverless_inbound" {
+  count = var.create_vpc && var.serverless_dedicated_network_acl && length(var.serverless_subnets) > 0 ? length(var.serverless_inbound_acl_rules) : 0
+
+  network_acl_id = aws_network_acl.serverless[0].id
+
+  egress          = false
+  rule_number     = var.serverless_inbound_acl_rules[count.index]["rule_number"]
+  rule_action     = var.serverless_inbound_acl_rules[count.index]["rule_action"]
+  from_port       = lookup(var.serverless_inbound_acl_rules[count.index], "from_port", null)
+  to_port         = lookup(var.serverless_inbound_acl_rules[count.index], "to_port", null)
+  icmp_code       = lookup(var.serverless_inbound_acl_rules[count.index], "icmp_code", null)
+  icmp_type       = lookup(var.serverless_inbound_acl_rules[count.index], "icmp_type", null)
+  protocol        = var.serverless_inbound_acl_rules[count.index]["protocol"]
+  cidr_block      = lookup(var.serverless_inbound_acl_rules[count.index], "cidr_block", null)
+  ipv6_cidr_block = lookup(var.serverless_inbound_acl_rules[count.index], "ipv6_cidr_block", null)
+}
+
+resource "aws_network_acl_rule" "serverless_outbound" {
+  count = var.create_vpc && var.serverless_dedicated_network_acl && length(var.serverless_subnets) > 0 ? length(var.serverless_outbound_acl_rules) : 0
+
+  network_acl_id = aws_network_acl.serverless[0].id
+
+  egress          = true
+  rule_number     = var.serverless_outbound_acl_rules[count.index]["rule_number"]
+  rule_action     = var.serverless_outbound_acl_rules[count.index]["rule_action"]
+  from_port       = lookup(var.serverless_outbound_acl_rules[count.index], "from_port", null)
+  to_port         = lookup(var.serverless_outbound_acl_rules[count.index], "to_port", null)
+  icmp_code       = lookup(var.serverless_outbound_acl_rules[count.index], "icmp_code", null)
+  icmp_type       = lookup(var.serverless_outbound_acl_rules[count.index], "icmp_type", null)
+  protocol        = var.serverless_outbound_acl_rules[count.index]["protocol"]
+  cidr_block      = lookup(var.serverless_outbound_acl_rules[count.index], "cidr_block", null)
+  ipv6_cidr_block = lookup(var.serverless_outbound_acl_rules[count.index], "ipv6_cidr_block", null)
 }
 
 ################################################################################

@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Terraform Install
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2.0.2
       - name: tfm-validate
         run: |
           chmod +x -R ./scripts

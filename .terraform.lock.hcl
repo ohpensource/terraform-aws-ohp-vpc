@@ -2,20 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.66.0"
+  version     = "4.37.0"
   constraints = ">= 3.0.0"
   hashes = [
-    "h1:V2HWB95PQn9c6P1GsPaUKZHRSBiAyh45tngFVsg4SxQ=",
-    "zh:21331ca956428f207c276c3e57ac8aa854b950b740e20318da727928460da42c",
-    "zh:2ae02a92abac8c99095c98272176543fefc9a3e584a5ca279c9d346cae1825f1",
-    "zh:578e06c8559a124b9d9c904d526ba4d1abe1fe4c66c5c130b7d4a595ff6338ff",
-    "zh:699f58910307d42d6320d8ccf10d909a262fe7b5fc2dd7bf9e15eaa5a1374d4d",
-    "zh:8f61bf009a6f5ebfa8e1588df8d4f75ae275c6ef636eea1ef377aa4e6a388be5",
-    "zh:931b0beafcbd7e11fa59e554fd41b54e548cb994908e89f31ea9d612fce26eb9",
-    "zh:b3d5abde76e4bda153a63a11c1fa5aec19f6f977cbf1e26adcd2916ec93c1b6f",
-    "zh:b5a4f97335387b21fa38eed7c22b3c92f6b1157ed301a0880548277136962e48",
-    "zh:bfaf6c7fa7cc13cb833015d4eef700df652f40c6e658e76cf23aebfa4c8b7afe",
-    "zh:d56f612da07dee639e8eb75ce6a6f1b1255ec964e6fe9333c6a8fddd7ccf931f",
-    "zh:f695dfb0dbea6f48f6e6eb0ff5766f98d1f1708b77889df39c67113fbcd8a3cd",
+    "h1:fLTymOb7xIdMkjQU1VDzPA5s+d2vNLZ2shpcFPF7KaY=",
+    "zh:12c2eb60cb1eb0a41d1afbca6fc6f0eed6ca31a12c51858f951a9e71651afbe0",
+    "zh:1e17482217c39a12e930e71fd2c9af8af577bec6736b184674476ebcaad28477",
+    "zh:1e8163c3d871bbd54c189bf2fe5e60e556d67fa399e4c88c8e6ee0834525dc33",
+    "zh:399c41a3e096fd75d487b98b1791f7cea5bd38567ac4e621c930cb67ec45977c",
+    "zh:40d4329eef2cc130e4cbed7a6345cb053dd258bf6f5f8eb0f8ce777ae42d5a01",
+    "zh:625db5fa75638d543b418be7d8046c4b76dc753d9d2184daa0faaaaebc02d207",
+    "zh:7785c8259f12b45d19fa5abdac6268f3b749fe5a35c8be762c27b7a634a4952b",
+    "zh:8a7611f33cc6422799c217ec2eeb79c779035ef05331d12505a6002bc48582f0",
+    "zh:9188178235a73c829872d2e82d88ac6d334d8bb01433e9be31615f1c1633e921",
+    "zh:994895b57bf225232a5fa7422e6ab87d8163a2f0605f54ff6a18cdd71f0aeadf",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:b57de6903ef30c9f22d38d595d64b4f92a89ea717b65782e1f44f57020ce8b1f",
   ]
 }

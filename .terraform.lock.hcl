@@ -2,20 +2,21 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.66.0"
+  version     = "4.38.0"
   constraints = ">= 3.0.0"
   hashes = [
-    "h1:V2HWB95PQn9c6P1GsPaUKZHRSBiAyh45tngFVsg4SxQ=",
-    "zh:21331ca956428f207c276c3e57ac8aa854b950b740e20318da727928460da42c",
-    "zh:2ae02a92abac8c99095c98272176543fefc9a3e584a5ca279c9d346cae1825f1",
-    "zh:578e06c8559a124b9d9c904d526ba4d1abe1fe4c66c5c130b7d4a595ff6338ff",
-    "zh:699f58910307d42d6320d8ccf10d909a262fe7b5fc2dd7bf9e15eaa5a1374d4d",
-    "zh:8f61bf009a6f5ebfa8e1588df8d4f75ae275c6ef636eea1ef377aa4e6a388be5",
-    "zh:931b0beafcbd7e11fa59e554fd41b54e548cb994908e89f31ea9d612fce26eb9",
-    "zh:b3d5abde76e4bda153a63a11c1fa5aec19f6f977cbf1e26adcd2916ec93c1b6f",
-    "zh:b5a4f97335387b21fa38eed7c22b3c92f6b1157ed301a0880548277136962e48",
-    "zh:bfaf6c7fa7cc13cb833015d4eef700df652f40c6e658e76cf23aebfa4c8b7afe",
-    "zh:d56f612da07dee639e8eb75ce6a6f1b1255ec964e6fe9333c6a8fddd7ccf931f",
-    "zh:f695dfb0dbea6f48f6e6eb0ff5766f98d1f1708b77889df39c67113fbcd8a3cd",
+    "h1:LympybKZJE3L0H12nMmDnFH1iexD9S2GqZbDMo4fuPI=",
+    "zh:0ae61458acf7acecf47f7a02e08da1f7adeee9532e053c0d80432f16197e4799",
+    "zh:1ece9bcef41ffc75e0955419d7f8b1708ab7ffe4518bc9a2afe3bc5c79a9e79b",
+    "zh:302065a7c3ae798345b92a465b650b025d9c4e9abc3e78421ecc69a17b8c3d6a",
+    "zh:52d61f6a3ed6726b821a78f1fb78df818cf24a4d2378cc16afded297b37d4b7b",
+    "zh:6c365ed0cae031acdbcca04560997589a94629269cb456d468cbe51a3a020386",
+    "zh:70987a51d782f3458f124efea320157a48453864c420421051c56d41e463a948",
+    "zh:8b5a5f30240c67e596a89ccd76aa81133e6ae253c8a06a932b8901ef2b4a7486",
+    "zh:9b12af85486a96aedd8d7984b0ff811a4b42e3d88dad1a3fb4c0b580d04fa425",
+    "zh:d672167515ece7c2db4663faf180dfb6cfc6dbf5e149f868d05c39bb54b9ca03",
+    "zh:df1bc9926674b2e1246c9ebffd8bf8c4e380f50910a7f0b3ded957e8768ae27a",
+    "zh:e304b6e2bd66e7992326aa0446152547eb97e8f77d00bc1a9096022ac37e5d71",
+    "zh:f033690f11446af1383ad74149f429fae19e2784af5e151a22f46965dff21b29",
   ]
 }

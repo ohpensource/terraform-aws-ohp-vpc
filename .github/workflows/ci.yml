@@ -21,7 +21,7 @@ jobs:
         run: terraform fmt -write=false -list=true -recursive -check
 
       - name: TFLint Install
-        uses: terraform-linters/setup-tflint@v1
+        uses: terraform-linters/setup-tflint@v3
       - name: Run tflint
         run: |
           tflint --init
